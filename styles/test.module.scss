@@ -1,0 +1,35 @@
+.test {
+  transition: all 0.2s ease-in-out;
+  transform: scaleX(1);
+}
+
+.anim {
+  transition: all 0.2s ease-in-out;
+  transform: scaleX(1);
+}
+
+.heart {
+  left: -16px;
+  top: -6px;
+  z-index: 1;
+  pointer-events: none;
+  width: 50px;
+  height: 50px;
+  background: url("/heart.png") no-repeat;
+  background-position: left;
+  background-size: 2900%;
+  cursor: pointer;
+
+  @keyframes heart-burst {
+    from {
+      background-position: left;
+    }
+    to {
+      background-position: right;
+    }
+  }
+
+  &.isActive {
+    animation: heart-burst 0.8s steps(28) 1;
+  }
+}
