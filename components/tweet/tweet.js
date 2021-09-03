@@ -147,9 +147,9 @@ export default function Tweet({
                 </span>
               </button>
               <div
-                className={`absolute w-8 bottom-0 ${like && styles.heart} ${
-                  like && styles.isActive
-                }`}
+                className={`absolute w-8 bottom-0 transform -translate-y-1 scale-95 ${
+                  like && styles.heart
+                } ${like && styles.isActive}`}
               ></div>
             </div>
           </div>

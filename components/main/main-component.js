@@ -25,7 +25,9 @@ export default function Main({ children }) {
       <div className="sticky top-1 z-10 bg-white p-2 px-4 text-xl font-black w-full border-b-2">
         Home
       </div>
-      <div className="overflow-y-scroll mt-1 h-screen no-scrollbar text-sm">
+      <div
+        className={`overflow-y-scroll mt-1 h-screen no-scrollbar text-sm ${styles.scroll}`}
+      >
         <div className="flex p-2 px-4">
           <div className="w-12">
             <Image
